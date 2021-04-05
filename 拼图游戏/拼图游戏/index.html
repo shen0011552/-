@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>拼图游戏</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <div class="content" id="box">
+
+        <!-- 页面初始化 -->
+        <div class="initBox">
+            <img src="./img/bg.jpg" alt="">  <!--背景图片-->
+            <div class="title">
+                爱拼<br/> 才会赢
+            </div> 
+            <div class="btn startBtn">开始游戏</div>
+            <div class="btn gradeBtn">更改难度</div>
+            <div class="btn imgBtn">更换图片</div>
+        </div>
+
+        <!-- 游戏盒子 -->
+        <div class="gameBg">
+            <!--方块  -->
+            <div class="gameBox">
+                <ul class="pulList">
+                    <!-- li小方块 -->
+                </ul>
+            </div>
+            <!-- 设置 -->
+            <dic class="setBox">
+                <div class="targeBox">
+                    <span>目标图</span>
+                    <div class="targeImg"></div>
+                </div>
+                <div class="gameTime">
+                    00 : 00
+                </div>
+                <div class="btn stopBtn">暂停</div>
+                <div class="btn outBtn">退出</div>
+            </dic>
+        </div>
+
+        <!-- 游戏通关盒子 -->
+        <div class="passBox">
+            <div class="passTitle">
+                恭喜你通过本关
+            </div>
+            <div class="passGrade">通关等级：初级<br/>难度系数： 1</div>
+            <div class="passTime">通关时间：<span>00 ：00</span></div>
+            <div class="btnBox">
+                <span class="btn restartBtn">重新挑战</span>
+                <span class="btn nextBtn">下一关</span>
+            </div>
+        </div>
+
+        <!-- 难度列表 -->
+        <!-- 元素的六个通用属性 id class style name title data-(自定义属性) -->
+        <div class="gradeBox">
+            <div class="gradeTitle">游戏等级</div>
+            <div data-num = "1" class="gradeList">初级 难度系数：1</div>
+            <div data-num = "2" class="gradeList">中级 难度系数：2</div>
+            <div data-num = "3" class="gradeList">高级 难度系数：3</div>
+            <div data-num = "4" class="gradeList">终极 难度系数：4</div>
+            <div data-num = "5" class="gradeList">精英 难度系数：5</div>
+            
+        </div>
+
+        <!-- 图片列表 -->
+        <div class="imgBox">
+            <div class="imgTitle">图片列表</div>
+            <ul class="imgList">
+                <li data-img="1.jpg"><img src="./img/1.jpg" alt=""></li>
+                <li data-img="2.jpg"><img src="./img/2.jpg" alt=""></li>
+                <li data-img="3.jpg"><img src="./img/3.jpg" alt=""></li>
+                <li data-img="4.jpg"><img src="./img/4.jpg" alt=""></li>
+                <li data-img="5.jpg"><img src="./img/5.jpg" alt=""></li>
+                <li data-img="6.jpg"><img src="./img/6.jpg" alt=""></li>
+                <li data-img="7.jpg"><img src="./img/7.jpg" alt=""></li>
+                <li data-img="8.jpg"><img src="./img/8.jpg" alt=""></li>
+                <li data-img="9.jpg"><img src="./img/9.jpg" alt=""></li>
+                <li data-img="10.jpg"><img src="./img/10.jpg" alt=""></li>
+            </ul>
+        </div>
+
+         
+    </div>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>

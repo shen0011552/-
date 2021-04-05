@@ -1,0 +1,286 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.container .top-logo img{
+    margin-right: 24px;
+    margin-top: 10px;
+}
+.topList li{
+    height: 120px;
+    float: left;
+    line-height: 120px;
+    padding: 0 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.topList li:hover{
+    background-color: orange;
+}
+.header .banner img{
+    width: 100%;
+}
+.top-title h3{
+    text-align: center;
+    font-size: 20px;
+    margin:5px 0;
+    color: black;
+    font-weight: bolder;
+}
+.top-title p{
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+    color: black;
+    font-weight: bolder;
+}
+.qinyan-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.qinyan-list li{
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    margin:15px 0;
+}
+.qinyan-list h4{
+    font-size: 16px;
+}
+.guanyu{
+    width: 100%;
+    height: 900px;
+    background-color: #ccc;
+    position: relative;
+}
+.guanyu .guanyu-sanjiao{
+    width: 0px;
+    height: 0px;
+   border: 160px solid transparent;
+   border-bottom: 160px solid red;
+   transform: rotate(180deg);
+   position: absolute;
+   margin: 0 auto;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+.guanyu ul{
+    position: absolute;
+    top: 40px;
+    left:46%;
+}
+.guanyu ul li:nth-child(1){
+    font-size: 30px;
+}
+.guanyu ul li:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.guanyu .guanyu-auto{
+    height: 600px;
+    width: 1200px;
+    background-color:white;
+    position: absolute;
+    top: 170px;
+    left: 10%; 
+}
+.guanyu .guanyu-auto ul{
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.guanyu .guanyu-auto ul li{
+    
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+.guanyu .guanyu-auto ul li p{
+    color: red;
+   text-align: left;
+   margin: 20px 10px;
+   font-size: 18px;
+   font-weight:bolder;
+}
+.guanyu .guanyu-auto ul li span{
+    line-height: 30px;
+    font-size: 18px;
+    display: block;
+    text-indent: 2em;
+    
+}
+.guanyu .guanyu-auto ul li img{
+    width: 400px;
+    height: 600px;
+}
+.guanyu .guanyu-auto ul li .spanList{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #ccc;
+    margin: 30px 0;
+    margin-left: 280px;
+    border-radius: 10%;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+.guanyu .guanyu-auto ul li .spanList:hover{
+    background-color: #ccc;
+}
+
+.button .container .button-list{}
+.button .container .button-list li{
+    width:300px;
+    height: 300px;
+    
+    float: left;
+    margin: 50px;
+    background: url(./img/red.png) no-repeat 90px;
+}
+.button .container .button-list li img{
+    width: 80px;
+    height: 80px;
+    margin-left: 110px;
+    margin-top: 110px;
+}
+.button .container .button-list li .dotText{
+    text-align: center;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.right{
+    width: 50px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top:200px;
+    position: fixed;
+    z-index: 999;
+}
+.right ul li{
+    width:100%;
+    height: 75px;
+    cursor: pointer;
+}
+.right ul li span{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: underline;
+    font-size: 10px;
+    color: black;
+}
+.right img{
+    width:20px;
+    height: 20px;
+    margin-left: 15px;
+}
+.bottomdt img{
+    width:100%;
+}
+.newTitle{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+    
+}
+.newTitle .newTop{
+    overflow: hidden;
+}
+.newTitle .newTop .newLeft{
+    float: left;
+    width: 50%;
+}
+.newTitle .newTop .newRight{
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+    line-height: 30px;
+    
+}
+.newTitle .newTop .newRight p{
+    font-size: 20px;
+    color: #333;
+}
+.newTitle .newTop .newRight p.newtext{
+    color:#999;
+}
+.newTitle .newTop .newRight ul{
+    margin-top:20px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.newBotton{
+    margin-top: 50px;
+}
+.newBotton li{
+    width: 25%;
+    float: left;
+}
+.bottonTitles{
+    padding: 40px 0;
+    width: 100%;
+    background-color: black;  
+}
+.bottonT{
+    overflow: hidden;
+}
+.bottonT .botton-box{
+    width: 33.33%;
+    float: left;
+}
+.bottonT .botton-box img:first-child{
+    margin-left: 100px;
+}
+.bottonT .botton-box img:nth-child(2){
+    margin-top: 10px;
+}
+.bottonT .botton-box img{
+    vertical-align: top;
+}
+.bottonT .botton-box ul{
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.bottonC{
+    width: 1100px;
+    margin: 0 auto;
+}
+.bottonB{
+    width: 100%;
+}
+.bottonB ul{
+    padding-top: 40px;
+    text-align: center;
+}
+.bottonB ul li{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.bottonTitles .bottonB ul .act:hover{
+    color: #fff;
+}
+.end{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #fff;
+}

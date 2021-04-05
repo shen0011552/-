@@ -1,0 +1,231 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+ul,li,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    border: 1px solid #000;
+    margin: 100px auto 0;
+    box-shadow: 8px 6px 10px rgba(117, 115, 115, 0.45);
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fff;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    font-family: xmt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #D24D57;
+    color: #fff;
+}
+
+/* 初始化盒子 */
+.initBox{
+     /* display: none; 隐藏盒子 */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+}
+.initBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.initBox .title{
+    padding: 50px 0;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    font-family: slt;
+}
+
+/* 游戏盒子 */
+.gameBg{
+    display: none;
+    width: 100%;
+    height: 100%;
+
+}
+.gameBg .gameBox{
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    float: left;
+}
+.gameBg .gameBox .pulList{
+    width: 500px;
+    height: 500px;
+}
+.lis{
+    float: left;
+    border: 1px solid #abc;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+.gameBg .setBox{
+    width: 300px;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+.gameBg .setBox .targeBox{
+    margin-top: 50px;
+}
+.gameBg .setBox .targeBox span,
+.gameBg .setBox .gameTime{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: xmt;
+}
+.gameBg .setBox .targeBox .targeImg{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-size: 100% 100%;
+}
+.gameBg .setBox .gameTime{
+    margin: 50px 0;
+}
+.gameBg .setBox .btn,
+.passBox .btnBox span,
+.gradeBox .btn{
+    background-color: rgb(233, 148, 155);
+}
+.gameBg .setBox .btn:hover,
+.passBox .btnBox span:hover,
+.gradeBox .btn:hover{
+    background-color: #D24D57;
+}
+
+
+/* 通关盒子的css */
+.passBox,.gradeBox{
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -210px;
+    background-color: #fff;
+    text-align: center;
+    display: none;  
+}
+.passBox .passTitle,
+.gradeBox .gradeTitle{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: slt;
+    background-color: #D24D57;
+    color: #fff;
+    padding: 8px 0;
+}
+.passBox .passGrade{
+    font-weight: bold;
+    font-family: xmt;
+    padding: 10px 0;
+}
+.passBox .passTime{
+    font-weight: bold;
+    font-family: xmt;
+}
+.passBox .passTime span{
+    font-size: 26px;
+    color: #D24D57;
+}
+.passBox .btnBox{
+    margin: 10px 0;
+}
+.passBox .btnBox span{
+    padding: 5px 25px;
+}
+
+/* 难度等级 */
+.gradeBox{
+    
+    top: 100px;
+    display: none;
+}
+.gradeBox .gradeList{
+    font-family: xmt;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.gradeBox .gradeList:hover{
+    background-color: #D24D57;
+    color: #fff;
+}
+.gradeBox .btn{
+    margin: 10px auto;
+}
+
+/* 图片列表 */
+.imgBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.imgBox .imgTitle{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: slt;
+    padding: 10px;
+    color: #fff;
+}
+.imgBox .imgList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.imgBox .imgList li{
+    width: 18%;
+    height: 140px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.imgBox .imgList li:hover{
+    border: 1px solid #D24D57;
+}
+.imgBox .imgList li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 引用字体文件 */
+@font-face{
+    font-family: xmt;
+    src: url(../font/喜满体.ttf);
+}
+@font-face{
+    font-family: slt;
+    src: url(../font/【次对】森林狂欢节.ttf);
+}
